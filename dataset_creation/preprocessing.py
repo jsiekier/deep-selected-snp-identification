@@ -355,7 +355,7 @@ if __name__ == '__main__':
         filter_file='',
         pop_idx_to_take=arguments.considered_populations
     )
-    #region_creator.create_regions(gene_path)
+    region_creator.create_regions(gene_path)
 
     print('all genes are written...')
     print('create train validate test split:')
