@@ -1,4 +1,4 @@
-# deep-selected-SNP-identification
+# deep-selected-snp-identification
 
 Implementation of selected SNP and gene detection pipeline of the paper "Deep Unsupervised Identification of Selected Genes and SNPs in Pool-Seq Data from Evolving Populations" accepted in RECOMB-Genetics 2022.
 
