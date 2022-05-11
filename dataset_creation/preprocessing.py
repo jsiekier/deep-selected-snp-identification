@@ -317,7 +317,6 @@ class region_maker():
 
 
 
-
 def parse_args():
     argparser = argparse.ArgumentParser()
     argparser.add_argument('--out_path', default='', type=str)
@@ -330,6 +329,8 @@ def parse_args():
 
     arguments=argparser.parse_args()
     return arguments
+
+
 
 
 
@@ -368,6 +369,6 @@ if __name__ == '__main__':
     #folder_percentages=[0.6,0.1,0.3]
     #train_test_splitter=Train_test_splitter(batch_path,train_test_data,folder_names,folder_percentages)
     #train_test_splitter.make_split()
-    if arguments.selection_file!='':
-        add_selection_positions(sample_folder=batch_path, selection_file=arguments.selection_file)
+
+    add_selection_positions(sample_folder=base_path, selection_file=arguments.selection_file)
 

@@ -13,8 +13,11 @@ def read_selection_pos(selection_path):
     return positions
 
 def add_selection_positions(sample_folder,selection_file):
-    selection_positions = read_selection_pos(selection_file)
-    for folder_name in ['batches']:
+    if selection_file!='':
+        selection_positions = read_selection_pos(selection_file)
+    else:
+        selection_positions=dict()
+    for folder_name in ['/batches']:
         for c, file in enumerate(glob.glob(sample_folder+folder_name + '/*')):
             gene_file = open(file, 'rb')
             data_batch = pkl.load(gene_file)
